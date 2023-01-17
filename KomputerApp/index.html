@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Komputer-Store</title>
+</head>
+<body>
+    <div id="header">
+        <h2>Komputer Store</h2>
+    </div>
+    <div id="body-div">
+        <div id="main-container">
+            <div class="section-div">
+                <div class="padding-div">
+                    <h3>Joe Banker</h3>
+                    <div class="value-container">
+                        <p id="balance-txt">Balance</p>
+                        <p id="balance-value"></p>
+                    </div>
+                    <div class="loan-container">
+                        <p id="loan-txt"></p>
+                        <p id="loan-value"></p>
+                    </div>
+                    <div class="btn-container">
+                        <input onclick="getLoanInput()" class="btn" id="loan-btn" type="button" value="Get a loan">
+                    </div>
+                </div>
+            </div>
+            <div class="section-div">
+                <div class="padding-div">
+                    <h3>Work</h3>
+                    <div class="value-container">
+                        <p id="pay-txt">Pay</p>
+                        <p id="pay-value">100kr</p>
+                    </div>
+                    <div class="btn-container">
+                        <input onclick="bank()" class="btn" id="bank-btn" type="button" value="Bank">
+                        <input onclick="work()" class="btn" id="work-btn" type="button" value="Work">
+                        <input onclick="repayLoan()" class="btn" id="repay-btn" type="button" value="Repay loan">
+                    </div>
+                </div>
+            </div>
+            <div class="section-div">
+                <div class="padding-div">
+                    <h3>Laptops</h3>
+                    <div id="dropdown-div">
+                        <select name="" id="laptop-dropdown"></select>
+                    </div>
+                    <div id="specs-div">
+                        <h4>Features:</h4>
+                        <ul id="laptop-specs"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="laptop-info">
+            <div id="laptop-info-div">
+                <div id="image-container">
+                    <img id="laptop-image" src="">
+                </div>
+                <div id="laptop-info-container">
+                    <h2 id="laptop-name"></h2>
+                    <p id="laptop-description"></p>
+                </div>
+                <div id="buy-container">
+                    <h3 id="laptop-price"></h3>
+                    <input class="btn" id="buy-now-btn" type="button" value="BUY NOW" onclick="buyNow()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
